@@ -1,0 +1,17 @@
+{
+  "servicesPage": {
+    "description": "Manage the hero section for the Services page",
+    "heroSectionSettings": "Hero Section Settings",
+    "heroTitleEn": "Hero Title (English)",
+    "heroTitleAr": "Hero Title (Arabic)",
+    "heroDescriptionEn": "Hero Description (English)",
+    "heroDescriptionAr": "Hero Description (Arabic)",
+    "tickerTextEn": "Ticker Text (English)",
+    "tickerTextAr": "Ticker Text (Arabic)",
+    "tickerTextDesc": "Text that will scroll horizontally at the bottom of the hero section",
+    "heroImage": "Hero Image",
+    "currentImage": "Current image:",
+    "updateSettings": "Update Settings"
+  }
+}
+

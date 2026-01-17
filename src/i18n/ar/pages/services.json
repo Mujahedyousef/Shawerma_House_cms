@@ -1,0 +1,32 @@
+{
+  "services": {
+    "description": "إدارة الخدمات لصفحة الخدمات",
+    "addService": "إضافة خدمة",
+    "editService": "تعديل خدمة",
+    "createService": "إنشاء خدمة",
+    "updateService": "تحديث خدمة",
+    "serviceType": "نوع الخدمة",
+    "imageOnly": "صورة فقط",
+    "serviceCard": "بطاقة الخدمة",
+    "countNumber": "العدد/الرقم",
+    "pleaseUploadImage": "الرجاء رفع صورة أو تقديم رابط صورة",
+    "addTag": "إضافة علامة",
+    "removeTag": "إزالة",
+    "noTagsAdded": "لم يتم إضافة علامات. انقر على \"إضافة علامة\" لإضافة علامات لهذه الخدمة.",
+    "tagTextEn": "نص العلامة (الإنجليزية)",
+    "tagTextAr": "نص العلامة (العربية)",
+    "serviceImage": "صورة الخدمة",
+    "currentImage": "الصورة الحالية:",
+    "displayPattern": "معاينة نمط العرض",
+    "displayPatternDesc": "سيتم عرض الخدمات بهذا النمط المتناوب: صورة → بطاقة خدمة → صورة → بطاقة خدمة...",
+    "allServices": "جميع الخدمات",
+    "imageType": "نوع الصورة",
+    "cardType": "نوع البطاقة",
+    "noServicesFound": "لم يتم العثور على خدمات. أضف أول خدمة!",
+    "displayedAtPositions": "يُعرض في المواضع",
+    "noCountNumber": "لا يظهر رقم العدد",
+    "showsCountNumber": "يعرض رقم العدد (01، 02، 03...)",
+    "tag": "علامة"
+  }
+}
+

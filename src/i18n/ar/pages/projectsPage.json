@@ -1,0 +1,16 @@
+{
+  "projectsPage": {
+    "description": "إدارة قسم الرئيسي وأزرار صفحة المشاريع",
+    "heroSettings": "إعدادات الرئيسي",
+    "heroButtons": "أزرار الرئيسي",
+    "heroSectionSettings": "إعدادات قسم الرئيسي",
+    "addHeroButton": "إضافة زر بطل",
+    "editHeroButton": "تعديل زر الرئيسي",
+    "updateButton": "تحديث الزر",
+    "createButton": "إنشاء الزر",
+    "noHeroButtonsYet": "لم يتم إضافة أزرار بطل بعد",
+    "getStarted": "أضف أول زر بطل أعلاه",
+    "heroButton": "زر الرئيسي"
+  }
+}
+

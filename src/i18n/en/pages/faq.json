@@ -1,0 +1,20 @@
+{
+  "faq": {
+    "description": "Manage FAQ page settings and questions",
+    "item": "FAQ Item",
+    "pageSettings": "Page Settings",
+    "items": "FAQ Items",
+    "addItem": "Add FAQ Item",
+    "editItem": "Edit FAQ Item",
+    "createItem": "Create FAQ Item",
+    "updateItem": "Update FAQ Item",
+    "question": "Question",
+    "answer": "Answer",
+    "noItemsYet": "No FAQ items added yet",
+    "getStarted": "Get started by adding your first FAQ item",
+    "createFirstItem": "Create First FAQ Item",
+    "updateSettings": "Update page title and description",
+    "visibleOnFrontend": "visible on frontend"
+  }
+}
+

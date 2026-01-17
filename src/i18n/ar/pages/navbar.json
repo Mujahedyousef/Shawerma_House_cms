@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "description": "إدارة شعار شريط التنقل وروابط التنقل",
+    "logo": "الشعار",
+    "links": "الروابط",
+    "navigationLinks": "روابط التنقل",
+    "logoSettings": "إعدادات الشعار",
+    "currentLogo": "الشعار الحالي",
+    "uploadNewLogo": "رفع شعار جديد",
+    "updateLogo": "تحديث الشعار",
+    "logoRecommendations": "موصى به: تنسيق SVG أو PNG أو JPG. الحد الأقصى للحجم: 100 ميجابايت",
+    "selectLogoFile": "الرجاء اختيار ملف الشعار",
+    "link": "الرابط",
+    "addLink": "إضافة رابط",
+    "editLink": "تعديل رابط",
+    "createLink": "إنشاء رابط",
+    "updateLink": "تحديث رابط",
+    "text": "النص",
+    "linkUrl": "رابط URL",
+    "noLinksYet": "لم يتم إضافة روابط بعد",
+    "getStarted": "ابدأ بإضافة أول رابط لك",
+    "createFirstLink": "إنشاء أول رابط",
+    "linkUrlHint": "استخدم المسارات النسبية (مثل /products) أو روابط الهاش (مثل #about)"
+  }
+}
+

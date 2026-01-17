@@ -1,0 +1,21 @@
+{
+  "startProject": {
+    "description": "Manage \"Start your project with us\" section content",
+    "sectionContent": "Section Content",
+    "updateContent": "Update the title, description, background image, and button texts",
+    "title": "Title",
+    "description": "Description",
+    "button1": "Button 1: Talk to Expert",
+    "button2": "Button 2: Start Order",
+    "backgroundImage": "Background Image",
+    "backgroundImageUrl": "Or provide image URL",
+    "backgroundImageHelp": "Provide either a file upload or image URL (at least one is required for new sections)",
+    "buttonText": "Button Text",
+    "buttonLink": "Button Link",
+    "currentImage": "Current background image:",
+    "save": "Save Section",
+    "enterEnglishDescription": "Enter English description",
+    "enterArabicDescription": "أدخل الوصف بالعربية"
+  }
+}
+

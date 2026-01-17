@@ -1,0 +1,10 @@
+{
+  "termsAndConditions": {
+    "description": "Manage terms and conditions page settings and content",
+    "pageSettings": "Terms and Conditions Page Settings",
+    "updateSettings": "Update hero image, title, description, and content",
+    "heroImage": "Hero Image",
+    "currentHeroImage": "Current hero image:"
+  }
+}
+

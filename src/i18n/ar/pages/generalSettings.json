@@ -1,0 +1,13 @@
+{
+  "generalSettings": {
+    "currencySettings": "إعدادات العملة",
+    "quickSelectCurrencies": "اختيار سريع للعملات الشائعة",
+    "currencyCode": "رمز العملة",
+    "currencySymbol": "رمز العملة",
+    "currencyNameEn": "اسم العملة (الإنجليزية)",
+    "currencyNameAr": "اسم العملة (العربية)",
+    "preview": "معاينة",
+    "saveSettings": "حفظ الإعدادات العامة"
+  }
+}
+

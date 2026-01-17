@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "description": "Manage navbar logo and navigation links",
+    "logo": "Logo",
+    "links": "Links",
+    "navigationLinks": "Navigation Links",
+    "logoSettings": "Logo Settings",
+    "currentLogo": "Current Logo",
+    "uploadNewLogo": "Upload New Logo",
+    "updateLogo": "Update Logo",
+    "logoRecommendations": "Recommended: SVG, PNG, or JPG format. Max size: 100MB",
+    "selectLogoFile": "Please select a logo file",
+    "link": "Link",
+    "addLink": "Add Link",
+    "editLink": "Edit Link",
+    "createLink": "Create Link",
+    "updateLink": "Update Link",
+    "text": "Text",
+    "linkUrl": "Link URL",
+    "noLinksYet": "No links added yet",
+    "getStarted": "Get started by adding your first link",
+    "createFirstLink": "Create First Link",
+    "linkUrlHint": "Use relative paths (e.g., /products) or hash links (e.g., #about)"
+  }
+}
+

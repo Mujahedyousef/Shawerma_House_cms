@@ -1,0 +1,10 @@
+{
+  "productTypes": {
+    "description": "Manage product types for filtering",
+    "addProductType": "Add Product Type",
+    "updateProductType": "Update Product Type",
+    "noProductTypesYet": "No product types added yet",
+    "getStarted": "Add your first product type above"
+  }
+}
+

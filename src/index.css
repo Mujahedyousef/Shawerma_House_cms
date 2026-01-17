@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+
+  /* Admin Portal Brand Colors */
+  --color-admin-primary: #3daae1;
+  --color-admin-primary-dark: #1c90ce;
+  --color-admin-primary-light: #e0f2fe;
+  --color-admin-accent: #22c55e;
+  --color-admin-success: #10b981;
+  --color-admin-danger: #ef4444;
+  --color-admin-warning: #f59e0b;
+  --color-admin-info: #3b82f6;
+  --color-admin-purple: #8b5cf6;
+
+  /* Admin Portal UI Colors */
+  --color-admin-bg: #f8fafc;
+  --color-admin-surface: #ffffff;
+  --color-admin-surface-elevated: #ffffff;
+  --color-admin-card: #ffffff;
+  --color-admin-muted: #f1f5f9;
+  --color-admin-border: #e2e8f0;
+  --color-admin-border-light: #f1f5f9;
+  --color-admin-ring: #3daae1;
+  
+  /* Text Colors */
+  --color-admin-text: #0f172a;
+  --color-admin-text-muted: #64748b;
+  --color-admin-text-light: #94a3b8;
+  --color-admin-inverse: #ffffff;
+
+  /* Sidebar Colors */
+  --color-sidebar-bg: #ffffff;
+  --color-sidebar-border: #e2e8f0;
+  --color-sidebar-text: #475569;
+  --color-sidebar-text-active: #0f172a;
+  --color-sidebar-hover: #f1f5f9;
+  --color-sidebar-active: #e0f2fe;
+
+  /* Navbar Colors */
+  --color-navbar-bg: #ffffff;
+  --color-navbar-border: #e2e8f0;
+  --color-navbar-text: #0f172a;
+
+  /* Radii */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
+  --duration-fast: 150ms;
+  --duration: 200ms;
+  --duration-slow: 300ms;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-[var(--color-admin-bg)] text-[var(--color-admin-text)] antialiased;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headings scale */
+  h1 {
+    @apply text-3xl md:text-2xl font-semibold tracking-tight;
+  }
+  h2 {
+    @apply text-2xl md:text-xl font-semibold tracking-tight;
+  }
+  h3 {
+    @apply text-xl md:text-lg font-semibold;
+  }
+  h4 {
+    @apply text-lg md:text-sm font-semibold;
+  }
+
+  /* Focus ring */
+  :where(a, button, input, select, textarea, [role='button'], [tabindex]) {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-admin-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-admin-surface)];
+    transition: box-shadow var(--duration) var(--ease-out), transform var(--duration) var(--ease-out), background-color var(--duration) var(--ease-out),
+      color var(--duration) var(--ease-out);
+  }
+
+  /* Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-admin-border) var(--color-admin-muted);
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--color-admin-muted);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--color-admin-border);
+    border-radius: 4px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--color-admin-text-light);
+  }
+
+  /* RTL Support */
+  [dir='rtl'] {
+    direction: rtl;
+    text-align: right;
+  }
+
+  [dir='ltr'] {
+    direction: ltr;
+    text-align: left;
+  }
+
+  /* RTL Grid adjustments */
+  [dir='rtl'] .grid {
+    direction: rtl;
+  }
+
+  /* RTL Flex adjustments */
+  [dir='rtl'] .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  /* RTL Input text alignment */
+  [dir='rtl'] input[type='text'],
+  [dir='rtl'] input[type='email'],
+  [dir='rtl'] input[type='password'],
+  [dir='rtl'] input[type='number'],
+  [dir='rtl'] textarea {
+    text-align: right;
+  }
+
+  [dir='ltr'] input[type='text'],
+  [dir='ltr'] input[type='email'],
+  [dir='ltr'] input[type='password'],
+  [dir='ltr'] input[type='number'],
+  [dir='ltr'] textarea {
+    text-align: left;
+  }
+
+  /* RTL Margin/Padding utilities */
+  [dir='rtl'] .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  [dir='rtl'] .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

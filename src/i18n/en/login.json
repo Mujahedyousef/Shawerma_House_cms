@@ -1,0 +1,15 @@
+{
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Sign in to access the CMS",
+    "emailOrUsername": "Email or Username",
+    "password": "Password",
+    "signIn": "Sign In",
+    "signingIn": "Signing in...",
+    "loginFailed": "Login failed",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "enterPassword": "Enter your password"
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+  "productTypes": {
+    "description": "إدارة أنواع المنتجات للتصفية",
+    "addProductType": "إضافة نوع منتج",
+    "updateProductType": "تحديث نوع المنتج",
+    "noProductTypesYet": "لم يتم إضافة أنواع منتجات بعد",
+    "getStarted": "أضف أول نوع منتج أعلاه"
+  }
+}
+

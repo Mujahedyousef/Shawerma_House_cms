@@ -1,0 +1,28 @@
+{
+  "orders": {
+    "allOrders": "جميع الطلبات",
+    "pending": "قيد الانتظار",
+    "processing": "قيد المعالجة",
+    "completed": "مكتمل",
+    "cancelled": "ملغي",
+    "orderId": "رقم الطلب",
+    "product": "المنتج",
+    "customer": "العميل",
+    "contact": "الاتصال",
+    "date": "التاريخ",
+    "viewDetails": "عرض التفاصيل",
+    "noOrdersFound": "لم يتم العثور على طلبات",
+    "noProduct": "لا يوجد منتج",
+    "orderDetails": "تفاصيل الطلب",
+    "orderInformation": "معلومات الطلب",
+    "customerInformation": "معلومات العميل",
+    "updateStatus": "تحديث الحالة",
+    "notes": "ملاحظات",
+    "addNotesPlaceholder": "أضف ملاحظات حول هذا الطلب...",
+    "saveNotes": "حفظ الملاحظات",
+    "deleteOrder": "حذف الطلب",
+    "refresh": "تحديث",
+    "orderStatus": "حالة الطلب"
+  }
+}
+

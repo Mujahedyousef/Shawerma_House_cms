@@ -1,0 +1,17 @@
+{
+  "articles": {
+    "description": "إدارة قسم المقالات",
+    "articles": "المقالات",
+    "article": "المقال",
+    "addArticle": "إضافة مقال",
+    "editArticle": "تعديل مقال",
+    "createArticle": "إنشاء مقال",
+    "updateArticle": "تحديث مقال",
+    "date": "التاريخ",
+    "link": "الرابط",
+    "noArticlesYet": "لم يتم إضافة مقالات بعد",
+    "getStarted": "ابدأ بإضافة أول مقال لك",
+    "createFirstArticle": "إنشاء أول مقال"
+  }
+}
+

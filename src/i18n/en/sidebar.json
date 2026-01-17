@@ -1,0 +1,35 @@
+{
+  "sidebar": {
+    "cmsPortal": "CMS Portal",
+    "contentManagement": "Content Management",
+    "landingPage": "Landing Page",
+    "heroSection": "Hero Section",
+    "categories": "Categories",
+    "solutions": "Solutions",
+    "brands": "Brands",
+    "projects": "Projects",
+    "startProject": "Start Project",
+    "testimonials": "Testimonials",
+    "products": "Products",
+    "productTypes": "Product Types",
+    "orders": "Orders",
+    "pages": "Pages",
+    "projectsPage": "Projects Page",
+    "servicesPage": "Services Page",
+    "servicesManagement": "Services Management",
+    "blogsPage": "Blogs Page",
+    "aboutUsPage": "About Us Page",
+    "careersPage": "Careers Page",
+    "contactPage": "Contact Page",
+    "termsAndConditions": "Terms & Conditions",
+    "faqPage": "FAQ Page",
+    "uiSettings": "UI Settings",
+    "navbarSettings": "Navbar Settings",
+    "footerSettings": "Footer Settings",
+    "settings": "Settings",
+    "themeSettings": "Theme Settings",
+    "generalSettings": "General Settings",
+    "adminUser": "Admin User"
+  }
+}
+

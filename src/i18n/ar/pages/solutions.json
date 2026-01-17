@@ -1,0 +1,27 @@
+{
+  "solutions": {
+    "description": "إدارة محتوى قسم الحلول والصور والإعدادات",
+    "provideImage": "الرجاء إما تقديم رابط الصورة أو رفع ملف صورة",
+    "solutions": "الحلول",
+    "settings": "الإعدادات",
+    "addSolution": "إضافة حل",
+    "editSolution": "تعديل الحل",
+    "createSolution": "إنشاء حل",
+    "updateSolution": "تحديث الحل",
+    "generalInfo": "المعلومات العامة",
+    "updateSectionTitle": "تحديث عنوان القسم والعنوان الفرعي المعروض على الصفحة الرئيسية",
+    "saveSettings": "حفظ الإعدادات",
+    "noSolutionsYet": "لا توجد حلول بعد",
+    "getStarted": "ابدأ بإنشاء أول حل لك",
+    "createFirstSolution": "إنشاء أول حل",
+    "imageUrl": "رابط الصورة",
+    "or": "أو",
+    "uploadImage": "رفع صورة",
+    "height": "الارتفاع",
+    "tags": "العلامات",
+    "extraCount": "عدد إضافي",
+    "currentImage": "الصورة الحالية:",
+    "ctaButtonSettings": "إعدادات زر الدعوة إلى الإجراء"
+  }
+}
+

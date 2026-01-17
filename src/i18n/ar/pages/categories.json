@@ -1,0 +1,27 @@
+{
+  "categories": {
+    "description": "إدارة قسم التصنيفات المتميز",
+    "generalInfo": "المعلومات العامة",
+    "editCategory": "تعديل التصنيف",
+    "createNewCategory": "إنشاء تصنيف جديد",
+    "productCount": "عدد المنتجات",
+    "order": "الترتيب",
+    "displayOrder": "(ترتيب العرض)",
+    "gridClasses": "فئات الشبكة",
+    "layoutPosition": "(موضع التخطيط)",
+    "selectGridLayout": "اختر تخطيط الشبكة...",
+    "chooseGridAppearance": "اختر كيف يظهر هذا التصنيف في تخطيط الشبكة",
+    "activeVisible": "نشط (ظاهر على الموقع)",
+    "updateCategory": "تحديث التصنيف",
+    "createCategory": "إنشاء التصنيف",
+    "generalInformation": "المعلومات العامة",
+    "updateSectionTitle": "تحديث عنوان القسم والعنوان الفرعي المعروض على الصفحة الرئيسية",
+    "saveSettings": "حفظ الإعدادات",
+    "noCategoriesYet": "لا توجد تصنيفات بعد",
+    "getStarted": "ابدأ بإنشاء أول تصنيف لك",
+    "createFirstCategory": "إنشاء أول تصنيف",
+    "products": "المنتجات",
+    "currentImage": "الصورة الحالية:"
+  }
+}
+

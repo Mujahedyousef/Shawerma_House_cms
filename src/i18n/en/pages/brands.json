@@ -1,0 +1,15 @@
+{
+  "brands": {
+    "description": "Manage brands section and logos",
+    "general": "General",
+    "logos": "Logos",
+    "addLogo": "Add Logo",
+    "logo": "Logo",
+    "selectFile": "Please select a file",
+    "name": "Name",
+    "noLogosYet": "No logos added yet",
+    "getStarted": "Get started by adding your first logo",
+    "createFirstLogo": "Create First Logo"
+  }
+}
+

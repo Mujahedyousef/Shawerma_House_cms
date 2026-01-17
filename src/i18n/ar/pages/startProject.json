@@ -1,0 +1,21 @@
+{
+  "startProject": {
+    "description": "إدارة محتوى قسم \"ابدأ مشروعك معنا\"",
+    "sectionContent": "محتوى القسم",
+    "updateContent": "تحديث العنوان والوصف وصورة الخلفية ونصوص الأزرار",
+    "title": "العنوان",
+    "description": "الوصف",
+    "button1": "الزر الأول: تحدث مع خبير",
+    "button2": "الزر الثاني: ابدأ الطلب",
+    "backgroundImage": "صورة الخلفية",
+    "backgroundImageUrl": "أو قدم رابط الصورة",
+    "backgroundImageHelp": "قدم إما رفع ملف أو رابط صورة (مطلوب واحد على الأقل للأقسام الجديدة)",
+    "buttonText": "نص الزر",
+    "buttonLink": "رابط الزر",
+    "currentImage": "صورة الخلفية الحالية:",
+    "save": "حفظ القسم",
+    "enterEnglishDescription": "أدخل الوصف بالإنجليزية",
+    "enterArabicDescription": "أدخل الوصف بالعربية"
+  }
+}
+

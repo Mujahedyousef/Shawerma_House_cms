@@ -1,0 +1,27 @@
+{
+  "categories": {
+    "description": "Manage your outstanding categories section",
+    "generalInfo": "General Info",
+    "editCategory": "Edit Category",
+    "createNewCategory": "Create New Category",
+    "productCount": "Product Count",
+    "order": "Order",
+    "displayOrder": "(Display order)",
+    "gridClasses": "Grid Classes",
+    "layoutPosition": "(Layout position)",
+    "selectGridLayout": "Select grid layout...",
+    "chooseGridAppearance": "Choose how this category appears in the grid layout",
+    "activeVisible": "Active (visible on website)",
+    "updateCategory": "Update Category",
+    "createCategory": "Create Category",
+    "generalInformation": "General Information",
+    "updateSectionTitle": "Update the section title and subtitle displayed on the landing page",
+    "saveSettings": "Save Settings",
+    "noCategoriesYet": "No Categories Yet",
+    "getStarted": "Get started by creating your first category",
+    "createFirstCategory": "Create First Category",
+    "products": "Products",
+    "currentImage": "Current image:"
+  }
+}
+

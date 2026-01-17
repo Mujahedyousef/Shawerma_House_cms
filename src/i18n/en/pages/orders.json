@@ -1,0 +1,28 @@
+{
+  "orders": {
+    "allOrders": "All Orders",
+    "pending": "Pending",
+    "processing": "Processing",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "orderId": "Order ID",
+    "product": "Product",
+    "customer": "Customer",
+    "contact": "Contact",
+    "date": "Date",
+    "viewDetails": "View Details",
+    "noOrdersFound": "No orders found",
+    "noProduct": "No product",
+    "orderDetails": "Order Details",
+    "orderInformation": "ORDER INFORMATION",
+    "customerInformation": "CUSTOMER INFORMATION",
+    "updateStatus": "UPDATE STATUS",
+    "notes": "NOTES",
+    "addNotesPlaceholder": "Add notes about this order...",
+    "saveNotes": "Save Notes",
+    "deleteOrder": "Delete Order",
+    "refresh": "Refresh",
+    "orderStatus": "Order status"
+  }
+}
+

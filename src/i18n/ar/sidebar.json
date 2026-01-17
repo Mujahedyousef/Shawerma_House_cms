@@ -1,0 +1,35 @@
+{
+  "sidebar": {
+    "cmsPortal": "لوحة التحكم",
+    "contentManagement": "إدارة المحتوى",
+    "landingPage": "الصفحة الرئيسية",
+    "heroSection": "قسم الرئيسي",
+    "categories": "التصنيفات",
+    "solutions": "الحلول",
+    "brands": "العلامات التجارية",
+    "projects": "المشاريع",
+    "startProject": "ابدأ المشروع",
+    "testimonials": "الشهادات",
+    "products": "المنتجات",
+    "productTypes": "أنواع المنتجات",
+    "orders": "الطلبات",
+    "pages": "الصفحات",
+    "projectsPage": "صفحة المشاريع",
+    "servicesPage": "صفحة الخدمات",
+    "servicesManagement": "إدارة الخدمات",
+    "blogsPage": "صفحة المدونات",
+    "aboutUsPage": "صفحة من نحن",
+    "careersPage": "صفحة الوظائف",
+    "contactPage": "صفحة الاتصال",
+    "termsAndConditions": "الشروط والأحكام",
+    "faqPage": "صفحة الأسئلة الشائعة",
+    "uiSettings": "إعدادات الواجهة",
+    "navbarSettings": "إعدادات شريط التنقل",
+    "footerSettings": "إعدادات التذييل",
+    "settings": "الإعدادات",
+    "themeSettings": "إعدادات المظهر",
+    "generalSettings": "الإعدادات العامة",
+    "adminUser": "مستخدم الإدارة"
+  }
+}
+

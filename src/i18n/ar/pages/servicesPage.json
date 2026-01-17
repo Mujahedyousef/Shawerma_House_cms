@@ -1,0 +1,17 @@
+{
+  "servicesPage": {
+    "description": "إدارة قسم الرئيسي لصفحة الخدمات",
+    "heroSectionSettings": "إعدادات قسم الرئيسي",
+    "heroTitleEn": "عنوان الرئيسي (الإنجليزية)",
+    "heroTitleAr": "عنوان الرئيسي (العربية)",
+    "heroDescriptionEn": "وصف الرئيسي (الإنجليزية)",
+    "heroDescriptionAr": "وصف الرئيسي (العربية)",
+    "tickerTextEn": "نص الشريط (الإنجليزية)",
+    "tickerTextAr": "نص الشريط (العربية)",
+    "tickerTextDesc": "النص الذي سيتحرك أفقياً في أسفل قسم الرئيسي",
+    "heroImage": "صورة الرئيسي",
+    "currentImage": "الصورة الحالية:",
+    "updateSettings": "تحديث الإعدادات"
+  }
+}
+

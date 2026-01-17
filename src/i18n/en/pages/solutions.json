@@ -1,0 +1,27 @@
+{
+  "solutions": {
+    "description": "Manage your solutions section content, images, and settings",
+    "provideImage": "Please provide either an Image URL or upload an image file",
+    "solutions": "Solutions",
+    "settings": "Settings",
+    "addSolution": "Add Solution",
+    "editSolution": "Edit Solution",
+    "createSolution": "Create Solution",
+    "updateSolution": "Update Solution",
+    "generalInfo": "General Information",
+    "updateSectionTitle": "Update the section title and subtitle displayed on the landing page",
+    "saveSettings": "Save Settings",
+    "noSolutionsYet": "No Solutions Yet",
+    "getStarted": "Get started by creating your first solution",
+    "createFirstSolution": "Create First Solution",
+    "imageUrl": "Image URL",
+    "or": "or",
+    "uploadImage": "Upload Image",
+    "height": "Height",
+    "tags": "Tags",
+    "extraCount": "Extra Count",
+    "currentImage": "Current image:",
+    "ctaButtonSettings": "CTA Button Settings"
+  }
+}
+

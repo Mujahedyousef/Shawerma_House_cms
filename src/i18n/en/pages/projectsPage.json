@@ -1,0 +1,16 @@
+{
+  "projectsPage": {
+    "description": "Manage projects page hero section and buttons",
+    "heroSettings": "Hero Settings",
+    "heroButtons": "Hero Buttons",
+    "heroSectionSettings": "Hero Section Settings",
+    "addHeroButton": "Add Hero Button",
+    "editHeroButton": "Edit Hero Button",
+    "updateButton": "Update Button",
+    "createButton": "Create Button",
+    "noHeroButtonsYet": "No hero buttons added yet",
+    "getStarted": "Add your first hero button above",
+    "heroButton": "Hero button"
+  }
+}
+

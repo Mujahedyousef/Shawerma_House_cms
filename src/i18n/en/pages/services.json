@@ -1,0 +1,32 @@
+{
+  "services": {
+    "description": "Manage services for the Services page",
+    "addService": "Add Service",
+    "editService": "Edit Service",
+    "createService": "Create Service",
+    "updateService": "Update Service",
+    "serviceType": "Service Type",
+    "imageOnly": "Image Only",
+    "serviceCard": "Service Card",
+    "countNumber": "Count/Number",
+    "pleaseUploadImage": "Please upload an image or provide an image URL",
+    "addTag": "Add Tag",
+    "removeTag": "Remove",
+    "noTagsAdded": "No tags added. Click \"Add Tag\" to add tags for this service.",
+    "tagTextEn": "Tag Text (English)",
+    "tagTextAr": "Tag Text (Arabic)",
+    "serviceImage": "Service Image",
+    "currentImage": "Current image:",
+    "displayPattern": "Display Pattern Preview",
+    "displayPatternDesc": "Services will be displayed in this alternating pattern: Image → Service Card → Image → Service Card...",
+    "allServices": "All Services",
+    "imageType": "Image Type",
+    "cardType": "Card Type",
+    "noServicesFound": "No services found. Add your first service!",
+    "displayedAtPositions": "Displayed at positions",
+    "noCountNumber": "No count number shown",
+    "showsCountNumber": "Shows count number (01, 02, 03...)",
+    "tag": "tag"
+  }
+}
+

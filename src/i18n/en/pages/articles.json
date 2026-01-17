@@ -1,0 +1,17 @@
+{
+  "articles": {
+    "description": "Manage articles section",
+    "articles": "Articles",
+    "article": "Article",
+    "addArticle": "Add Article",
+    "editArticle": "Edit Article",
+    "createArticle": "Create Article",
+    "updateArticle": "Update Article",
+    "date": "Date",
+    "link": "Link",
+    "noArticlesYet": "No articles added yet",
+    "getStarted": "Get started by adding your first article",
+    "createFirstArticle": "Create First Article"
+  }
+}
+

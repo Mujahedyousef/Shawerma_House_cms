@@ -1,0 +1,13 @@
+{
+  "generalSettings": {
+    "currencySettings": "Currency Settings",
+    "quickSelectCurrencies": "Quick Select Common Currencies",
+    "currencyCode": "Currency Code",
+    "currencySymbol": "Currency Symbol",
+    "currencyNameEn": "Currency Name (English)",
+    "currencyNameAr": "Currency Name (Arabic)",
+    "preview": "Preview",
+    "saveSettings": "Save General Settings"
+  }
+}
+

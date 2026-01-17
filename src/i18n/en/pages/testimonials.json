@@ -1,0 +1,23 @@
+{
+  "testimonials": {
+    "description": "Manage customer testimonials and trust section",
+    "profile": "Profile",
+    "createTestimonialSection": "Create Testimonial Section",
+    "setupSection": "Set up the customer trust section",
+    "general": "General",
+    "profiles": "Profiles",
+    "addProfile": "Add Profile",
+    "editProfile": "Edit Profile",
+    "name": "Name",
+    "role": "Role",
+    "testimonialText": "Testimonial Text",
+    "profileImage": "Profile Image",
+    "testimonialImage": "Testimonial Image",
+    "currentImage": "Current image:",
+    "noProfilesYet": "No profiles added yet",
+    "getStarted": "Get started by adding your first profile",
+    "manageProfiles": "Manage profile pictures that appear below the testimonial",
+    "updateSectionTitle": "Update section title only"
+  }
+}
+

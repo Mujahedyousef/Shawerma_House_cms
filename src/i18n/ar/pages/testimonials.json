@@ -1,0 +1,23 @@
+{
+  "testimonials": {
+    "description": "إدارة شهادات العملاء وقسم الثقة",
+    "profile": "الملف الشخصي",
+    "createTestimonialSection": "إنشاء قسم الشهادات",
+    "setupSection": "إعداد قسم ثقة العملاء",
+    "general": "عام",
+    "profiles": "الملفات الشخصية",
+    "addProfile": "إضافة ملف شخصي",
+    "editProfile": "تعديل الملف الشخصي",
+    "name": "الاسم",
+    "role": "الدور",
+    "testimonialText": "نص الشهادة",
+    "profileImage": "صورة الملف الشخصي",
+    "testimonialImage": "صورة الشهادة",
+    "currentImage": "الصورة الحالية:",
+    "noProfilesYet": "لم يتم إضافة ملفات شخصية بعد",
+    "getStarted": "ابدأ بإضافة أول ملف شخصي لك",
+    "manageProfiles": "إدارة صور الملفات الشخصية التي تظهر أسفل الشهادة",
+    "updateSectionTitle": "تحديث عنوان القسم فقط"
+  }
+}
+
