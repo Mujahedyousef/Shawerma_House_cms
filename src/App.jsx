@@ -30,6 +30,7 @@ import OrderManager from './pages/OrderManager';
 import BlogsPageManager from './pages/BlogsPageManager';
 import AboutUsPageManager from './pages/AboutUsPageManager';
 import CareersPageManager from './pages/CareersPageManager';
+import DownloadAppSectionManager from './pages/DownloadAppSectionManager';
 
 function App() {
   const { i18n } = useTranslation();
@@ -84,6 +85,7 @@ function App() {
                         <Route path="/blogs-page" element={<BlogsPageManager />} />
                         <Route path="/about-us-page" element={<AboutUsPageManager />} />
                         <Route path="/careers-page" element={<CareersPageManager />} />
+                        <Route path="/download-app" element={<DownloadAppSectionManager />} />
                       </Routes>
                     </main>
                   </div>
