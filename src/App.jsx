@@ -31,6 +31,7 @@ import BlogsPageManager from './pages/BlogsPageManager';
 import AboutUsPageManager from './pages/AboutUsPageManager';
 import CareersPageManager from './pages/CareersPageManager';
 import DownloadAppSectionManager from './pages/DownloadAppSectionManager';
+import BranchesMapManager from './pages/BranchesMapManager';
 
 function App() {
   const { i18n } = useTranslation();
@@ -86,6 +87,7 @@ function App() {
                         <Route path="/about-us-page" element={<AboutUsPageManager />} />
                         <Route path="/careers-page" element={<CareersPageManager />} />
                         <Route path="/download-app" element={<DownloadAppSectionManager />} />
+                        <Route path="/branches-map" element={<BranchesMapManager />} />
                       </Routes>
                     </main>
                   </div>

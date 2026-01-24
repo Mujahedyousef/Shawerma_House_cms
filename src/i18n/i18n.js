@@ -65,6 +65,8 @@ import aboutUsEn from './en/pages/aboutUs.json';
 import aboutUsAr from './ar/pages/aboutUs.json';
 import downloadAppEn from './en/pages/downloadApp.json';
 import downloadAppAr from './ar/pages/downloadApp.json';
+import mapSectionEn from './en/pages/mapSection.json';
+import mapSectionAr from './ar/pages/mapSection.json';
 
 // Merge all translations
 const mergeTranslations = (...translations) => {
@@ -105,6 +107,7 @@ const enTranslations = mergeTranslations(
       careers: careersEn.careers,
       aboutUs: aboutUsEn.aboutUs,
       downloadApp: downloadAppEn.downloadApp,
+      mapSection: mapSectionEn.mapSection,
     },
   }
 );
@@ -141,6 +144,7 @@ const arTranslations = mergeTranslations(
       careers: careersAr.careers,
       aboutUs: aboutUsAr.aboutUs,
       downloadApp: downloadAppAr.downloadApp,
+      mapSection: mapSectionAr.mapSection,
     },
   }
 );
