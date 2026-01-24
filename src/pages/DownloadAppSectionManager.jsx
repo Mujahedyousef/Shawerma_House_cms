@@ -5,6 +5,7 @@ import {
   createDownloadAppSection,
   updateDownloadAppSection,
   uploadDownloadAppImage,
+  deleteDownloadAppImage,
 } from '../api/downloadAppSection';
 import { showSuccess, showError } from '../utils/i18nHelpers';
 
@@ -42,8 +43,12 @@ const DownloadAppSectionManager = () => {
       titleAr: formData.get('titleAr'),
       descriptionEn: formData.get('descriptionEn'),
       descriptionAr: formData.get('descriptionAr'),
-      backgroundColor: formData.get('backgroundColor'),
-      theme: formData.get('theme'),
+      backgroundColorLight: formData.get('backgroundColorLight'),
+      titleColorLight: formData.get('titleColorLight'),
+      descriptionColorLight: formData.get('descriptionColorLight'),
+      backgroundColorDark: formData.get('backgroundColorDark'),
+      titleColorDark: formData.get('titleColorDark'),
+      descriptionColorDark: formData.get('descriptionColorDark'),
       appStoreLink: formData.get('appStoreLink') || null,
       googlePlayLink: formData.get('googlePlayLink') || null,
       enableInitialAnimation: formData.get('enableInitialAnimation') === 'on',
@@ -69,8 +74,12 @@ const DownloadAppSectionManager = () => {
       titleAr: formData.get('titleAr'),
       descriptionEn: formData.get('descriptionEn'),
       descriptionAr: formData.get('descriptionAr'),
-      backgroundColor: formData.get('backgroundColor'),
-      theme: formData.get('theme'),
+      backgroundColorLight: formData.get('backgroundColorLight'),
+      titleColorLight: formData.get('titleColorLight'),
+      descriptionColorLight: formData.get('descriptionColorLight'),
+      backgroundColorDark: formData.get('backgroundColorDark'),
+      titleColorDark: formData.get('titleColorDark'),
+      descriptionColorDark: formData.get('descriptionColorDark'),
       appStoreLink: formData.get('appStoreLink') || null,
       googlePlayLink: formData.get('googlePlayLink') || null,
       enableInitialAnimation: formData.get('enableInitialAnimation') === 'on',
@@ -100,6 +109,19 @@ const DownloadAppSectionManager = () => {
       showError('failedToUpload', t('common.image'));
     } finally {
       setUploadingImage(null);
+    }
+  };
+
+  const handleImageDelete = async (imageType) => {
+    if (!confirm(t('common.confirmDelete'))) return;
+
+    try {
+      await deleteDownloadAppImage(section.id, imageType);
+      showSuccess('deleted', t('common.image'));
+      fetchSection();
+    } catch (error) {
+      console.error('Error deleting image:', error);
+      showError('failedToDelete', t('common.image'));
     }
   };
 
@@ -205,33 +227,94 @@ const DownloadAppSectionManager = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-semibold text-[var(--color-admin-text)] mb-2">
-                  {t('pages.downloadApp.backgroundColor')}
-                </label>
-                <input
-                  type="color"
-                  name="backgroundColor"
-                  defaultValue="#1a1a1a"
-                  className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
-                />
-                <p className="text-xs text-[var(--color-admin-text-muted)] mt-2">
-                  ℹ️ Only used as fallback if no background image is uploaded
-                </p>
-              </div>
+              {/* Styling & Theme Colors Section */}
+              <div className="border-t border-[var(--color-admin-border)] pt-6">
+                <h3 className="text-lg font-bold text-[var(--color-admin-text)] mb-4">
+                  {t('pages.downloadApp.stylingSettings')}
+                </h3>
+                
+                {/* Light Mode Colors */}
+                <div className="mb-6">
+                  <h4 className="text-md font-semibold text-[var(--color-admin-text)] mb-3">
+                    ☀️ {t('pages.downloadApp.lightModeColors')}
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                        {t('pages.downloadApp.backgroundColorLight')}
+                      </label>
+                      <input
+                        type="color"
+                        name="backgroundColorLight"
+                        defaultValue="#ffffff"
+                        className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                        {t('pages.downloadApp.titleColorLight')}
+                      </label>
+                      <input
+                        type="color"
+                        name="titleColorLight"
+                        defaultValue="#1a1a1a"
+                        className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                        {t('pages.downloadApp.descriptionColorLight')}
+                      </label>
+                      <input
+                        type="color"
+                        name="descriptionColorLight"
+                        defaultValue="#666666"
+                        className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Dark Mode Colors */}
                 <div>
-                  <label className="block text-sm font-semibold text-[var(--color-admin-text)] mb-2">
-                    {t('pages.downloadApp.theme')}
-                  </label>
-                  <select
-                    name="theme"
-                    defaultValue="dark"
-                    className="w-full px-4 py-3 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] text-[var(--color-admin-text)] focus:ring-2 focus:ring-[var(--color-admin-primary)] focus:border-[var(--color-admin-primary)] transition-all"
-                  >
-                    <option value="dark">{t('pages.downloadApp.themeDark')}</option>
-                    <option value="light">{t('pages.downloadApp.themeLight')}</option>
-                  </select>
+                  <h4 className="text-md font-semibold text-[var(--color-admin-text)] mb-3">
+                    🌙 {t('pages.downloadApp.darkModeColors')}
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                        {t('pages.downloadApp.backgroundColorDark')}
+                      </label>
+                      <input
+                        type="color"
+                        name="backgroundColorDark"
+                        defaultValue="#1a1a1a"
+                        className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                        {t('pages.downloadApp.titleColorDark')}
+                      </label>
+                      <input
+                        type="color"
+                        name="titleColorDark"
+                        defaultValue="#ffffff"
+                        className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                        {t('pages.downloadApp.descriptionColorDark')}
+                      </label>
+                      <input
+                        type="color"
+                        name="descriptionColorDark"
+                        defaultValue="#cccccc"
+                        className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -383,33 +466,94 @@ const DownloadAppSectionManager = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-semibold text-[var(--color-admin-text)] mb-2">
-                  {t('pages.downloadApp.backgroundColor')}
-                </label>
-                <input
-                  type="color"
-                  name="backgroundColor"
-                  defaultValue={section.backgroundColor}
-                  className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
-                />
-                <p className="text-xs text-[var(--color-admin-text-muted)] mt-2">
-                  ℹ️ Only used as fallback if no background image is uploaded
-                </p>
+            {/* Styling & Theme Colors Section */}
+            <div className="border-t border-[var(--color-admin-border)] pt-6">
+              <h3 className="text-lg font-bold text-[var(--color-admin-text)] mb-4">
+                {t('pages.downloadApp.stylingSettings')}
+              </h3>
+              
+              {/* Light Mode Colors */}
+              <div className="mb-6">
+                <h4 className="text-md font-semibold text-[var(--color-admin-text)] mb-3">
+                  ☀️ {t('pages.downloadApp.lightModeColors')}
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                      {t('pages.downloadApp.backgroundColorLight')}
+                    </label>
+                    <input
+                      type="color"
+                      name="backgroundColorLight"
+                      defaultValue={section.backgroundColorLight || '#ffffff'}
+                      className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                      {t('pages.downloadApp.titleColorLight')}
+                    </label>
+                    <input
+                      type="color"
+                      name="titleColorLight"
+                      defaultValue={section.titleColorLight || '#1a1a1a'}
+                      className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                      {t('pages.downloadApp.descriptionColorLight')}
+                    </label>
+                    <input
+                      type="color"
+                      name="descriptionColorLight"
+                      defaultValue={section.descriptionColorLight || '#666666'}
+                      className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                    />
+                  </div>
+                </div>
               </div>
+
+              {/* Dark Mode Colors */}
               <div>
-                <label className="block text-sm font-semibold text-[var(--color-admin-text)] mb-2">
-                  {t('pages.downloadApp.theme')}
-                </label>
-                <select
-                  name="theme"
-                  defaultValue={section.theme}
-                  className="w-full px-4 py-3 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] text-[var(--color-admin-text)] focus:ring-2 focus:ring-[var(--color-admin-primary)] focus:border-[var(--color-admin-primary)] transition-all"
-                >
-                  <option value="dark">{t('pages.downloadApp.themeDark')}</option>
-                  <option value="light">{t('pages.downloadApp.themeLight')}</option>
-                </select>
+                <h4 className="text-md font-semibold text-[var(--color-admin-text)] mb-3">
+                  🌙 {t('pages.downloadApp.darkModeColors')}
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                      {t('pages.downloadApp.backgroundColorDark')}
+                    </label>
+                    <input
+                      type="color"
+                      name="backgroundColorDark"
+                      defaultValue={section.backgroundColorDark || '#1a1a1a'}
+                      className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                      {t('pages.downloadApp.titleColorDark')}
+                    </label>
+                    <input
+                      type="color"
+                      name="titleColorDark"
+                      defaultValue={section.titleColorDark || '#ffffff'}
+                      className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-[var(--color-admin-text)] mb-2">
+                      {t('pages.downloadApp.descriptionColorDark')}
+                    </label>
+                    <input
+                      type="color"
+                      name="descriptionColorDark"
+                      defaultValue={section.descriptionColorDark || '#cccccc'}
+                      className="w-full h-12 px-2 border border-[var(--color-admin-border)] rounded-xl bg-[var(--color-admin-surface)] cursor-pointer"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -494,11 +638,23 @@ const DownloadAppSectionManager = () => {
             <div className="border border-[var(--color-admin-border)] rounded-xl p-4">
               <h3 className="text-lg font-semibold text-[var(--color-admin-text)] mb-3">{t('pages.downloadApp.backgroundImage')}</h3>
               {section.backgroundImageUrl && (
-                <img
-                  src={getImageUrl(section.backgroundImageUrl)}
-                  alt="Background"
-                  className="w-full h-40 object-cover rounded-lg mb-3"
-                />
+                <div className="relative mb-3">
+                  <img
+                    src={getImageUrl(section.backgroundImageUrl)}
+                    alt="Background"
+                    className="w-full h-40 object-cover rounded-lg"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => handleImageDelete('backgroundImageUrl')}
+                    className="absolute top-2 right-2 bg-red-500 hover:bg-red-600 text-white rounded-full p-2 shadow-lg transition-all"
+                    title={t('common.delete')}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                  </button>
+                </div>
               )}
               <input
                 type="file"
@@ -516,11 +672,23 @@ const DownloadAppSectionManager = () => {
             <div className="border border-[var(--color-admin-border)] rounded-xl p-4">
               <h3 className="text-lg font-semibold text-[var(--color-admin-text)] mb-3">{t('pages.downloadApp.mobileAppImage')}</h3>
               {section.mobileAppImageUrl && (
-                <img
-                  src={getImageUrl(section.mobileAppImageUrl)}
-                  alt="Mobile App"
-                  className="w-full h-40 object-contain rounded-lg mb-3"
-                />
+                <div className="relative mb-3">
+                  <img
+                    src={getImageUrl(section.mobileAppImageUrl)}
+                    alt="Mobile App"
+                    className="w-full h-40 object-contain rounded-lg"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => handleImageDelete('mobileAppImageUrl')}
+                    className="absolute top-2 right-2 bg-red-500 hover:bg-red-600 text-white rounded-full p-2 shadow-lg transition-all"
+                    title={t('common.delete')}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                  </button>
+                </div>
               )}
               <input
                 type="file"
@@ -538,11 +706,23 @@ const DownloadAppSectionManager = () => {
             <div className="border border-[var(--color-admin-border)] rounded-xl p-4">
               <h3 className="text-lg font-semibold text-[var(--color-admin-text)] mb-3">{t('pages.downloadApp.appStoreImage')}</h3>
               {section.appStoreImageUrl && (
-                <img
-                  src={getImageUrl(section.appStoreImageUrl)}
-                  alt="App Store"
-                  className="w-full h-20 object-contain rounded-lg mb-3"
-                />
+                <div className="relative mb-3">
+                  <img
+                    src={getImageUrl(section.appStoreImageUrl)}
+                    alt="App Store"
+                    className="w-full h-20 object-contain rounded-lg"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => handleImageDelete('appStoreImageUrl')}
+                    className="absolute top-2 right-2 bg-red-500 hover:bg-red-600 text-white rounded-full p-2 shadow-lg transition-all"
+                    title={t('common.delete')}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                  </button>
+                </div>
               )}
               <input
                 type="file"
@@ -560,11 +740,23 @@ const DownloadAppSectionManager = () => {
             <div className="border border-[var(--color-admin-border)] rounded-xl p-4">
               <h3 className="text-lg font-semibold text-[var(--color-admin-text)] mb-3">{t('pages.downloadApp.googlePlayImage')}</h3>
               {section.googlePlayImageUrl && (
-                <img
-                  src={getImageUrl(section.googlePlayImageUrl)}
-                  alt="Google Play"
-                  className="w-full h-20 object-contain rounded-lg mb-3"
-                />
+                <div className="relative mb-3">
+                  <img
+                    src={getImageUrl(section.googlePlayImageUrl)}
+                    alt="Google Play"
+                    className="w-full h-20 object-contain rounded-lg"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => handleImageDelete('googlePlayImageUrl')}
+                    className="absolute top-2 right-2 bg-red-500 hover:bg-red-600 text-white rounded-full p-2 shadow-lg transition-all"
+                    title={t('common.delete')}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                  </button>
+                </div>
               )}
               <input
                 type="file"

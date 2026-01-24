@@ -38,3 +38,8 @@ export const uploadDownloadAppImage = async (sectionId, imageType, file) => {
   return response.data;
 };
 
+export const deleteDownloadAppImage = async (sectionId, imageType) => {
+  const response = await API.delete(`/download-app-section/${sectionId}/delete-image/${imageType}`);
+  return response.data;
+};
+
