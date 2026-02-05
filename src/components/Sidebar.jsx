@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
-import { Image, Grid3x3, Briefcase, Newspaper, MessageSquare, Palette, X, Tag, FileText, HelpCircle, Navigation, DollarSign, ShoppingCart, Globe } from 'lucide-react';
+import { Image, Grid3x3, Briefcase, Newspaper, MessageSquare, Palette, X, Tag, FileText, HelpCircle, Navigation, DollarSign, ShoppingCart, Globe, Smartphone, MapPin } from 'lucide-react';
 import Logo from '../assets/Logo.svg';
 
 const Sidebar = ({ isOpen, onClose }) => {
@@ -19,6 +19,8 @@ const Sidebar = ({ isOpen, onClose }) => {
     { icon: Image, label: t('sidebar.heroSection'), href: '/', active: location.pathname === '/' },
     { icon: Grid3x3, label: t('sidebar.categories'), href: '/categories', active: location.pathname === '/categories' },
     { icon: Briefcase, label: t('sidebar.solutions'), href: '/solutions', active: location.pathname === '/solutions' },
+    { icon: Smartphone, label: t('sidebar.downloadApp'), href: '/download-app', active: location.pathname === '/download-app' },
+    { icon: MapPin, label: t('sidebar.branchesMap'), href: '/branches-map', active: location.pathname === '/branches-map' },
     { icon: Tag, label: t('sidebar.brands'), href: '/brands', active: location.pathname === '/brands' },
     { icon: Newspaper, label: t('sidebar.projects'), href: '/projects', active: location.pathname === '/projects' },
     { icon: Briefcase, label: t('sidebar.startProject'), href: '/start-project', active: location.pathname === '/start-project' },

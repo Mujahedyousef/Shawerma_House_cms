@@ -1,0 +1,32 @@
+{
+  "downloadApp": {
+    "title": "Download App Section",
+    "description": "Manage the download app section settings and content",
+    "noSection": "No Download App Section Created",
+    "noSectionDesc": "Create a download app section to encourage users to download your mobile app",
+    "createSection": "Create Download App Section",
+    "createSectionDesc": "Set up the download app section with title, description, and images",
+    "generalSettings": "General Settings",
+    "imagesManagement": "Images Management",
+    "stylingSettings": "Styling & Theme Colors",
+    "lightModeColors": "Light Mode Colors",
+    "darkModeColors": "Dark Mode Colors",
+    "backgroundColorLight": "Background Color (Light)",
+    "titleColorLight": "Title Color (Light)",
+    "descriptionColorLight": "Description Color (Light)",
+    "backgroundColorDark": "Background Color (Dark)",
+    "titleColorDark": "Title Color (Dark)",
+    "descriptionColorDark": "Description Color (Dark)",
+    "appStoreLink": "App Store Link",
+    "googlePlayLink": "Google Play Link",
+    "enableInitialAnimation": "Enable Initial Animation",
+    "enableScrollAnimation": "Enable Scroll Animation",
+    "backgroundImage": "Background Image",
+    "mobileAppImage": "Mobile App Image (Phone Preview)",
+    "appStoreImage": "App Store Button Image",
+    "googlePlayImage": "Google Play Button Image",
+    "imageUploadNote": "Recommended: High-quality images for best visual appearance",
+    "appButtonNote": "⚠️ Note: Button will only appear if BOTH link AND image are uploaded"
+  }
+}
+
