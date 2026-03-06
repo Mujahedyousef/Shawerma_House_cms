@@ -1,0 +1,32 @@
+{
+  "downloadApp": {
+    "title": "قسم تحميل التطبيق",
+    "description": "إدارة إعدادات ومحتوى قسم تحميل التطبيق",
+    "noSection": "لم يتم إنشاء قسم تحميل التطبيق",
+    "noSectionDesc": "قم بإنشاء قسم تحميل التطبيق لتشجيع المستخدمين على تحميل تطبيق الهاتف المحمول الخاص بك",
+    "createSection": "إنشاء قسم تحميل التطبيق",
+    "createSectionDesc": "قم بإعداد قسم تحميل التطبيق مع العنوان والوصف والصور",
+    "generalSettings": "الإعدادات العامة",
+    "imagesManagement": "إدارة الصور",
+    "stylingSettings": "إعدادات التصميم وألوان المظهر",
+    "lightModeColors": "ألوان الوضع الفاتح",
+    "darkModeColors": "ألوان الوضع الداكن",
+    "backgroundColorLight": "لون الخلفية (فاتح)",
+    "titleColorLight": "لون العنوان (فاتح)",
+    "descriptionColorLight": "لون الوصف (فاتح)",
+    "backgroundColorDark": "لون الخلفية (داكن)",
+    "titleColorDark": "لون العنوان (داكن)",
+    "descriptionColorDark": "لون الوصف (داكن)",
+    "appStoreLink": "رابط آب ستور",
+    "googlePlayLink": "رابط جوجل بلاي",
+    "enableInitialAnimation": "تفعيل الرسوم المتحركة الأولية",
+    "enableScrollAnimation": "تفعيل رسوم التمرير المتحركة",
+    "backgroundImage": "صورة الخلفية",
+    "mobileAppImage": "صورة التطبيق (معاينة الهاتف)",
+    "appStoreImage": "صورة زر آب ستور",
+    "googlePlayImage": "صورة زر جوجل بلاي",
+    "imageUploadNote": "موصى به: صور عالية الجودة لأفضل مظهر مرئي",
+    "appButtonNote": "⚠️ ملاحظة: سيظهر الزر فقط إذا تم رفع كل من الرابط والصورة"
+  }
+}
+
