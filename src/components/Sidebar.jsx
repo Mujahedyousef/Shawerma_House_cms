@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { Image, Grid3x3, Briefcase, Newspaper, MessageSquare, Palette, X, Tag, FileText, HelpCircle, Navigation, DollarSign, ShoppingCart, Globe } from 'lucide-react';
-import Logo from '../assets/Logo.svg';
+import Logo from '../assets/Logo.png';
 
 const Sidebar = ({ isOpen, onClose }) => {
   const { t, i18n } = useTranslation();
@@ -72,7 +72,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           {/* Logo Section */}
           <div className={`h-20 flex items-center justify-between px-6 border-b border-[var(--color-sidebar-border)] ${isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-[var(--color-admin-primary-light)] to-white`}>
             <div className="flex items-center gap-3">
-              <img src={Logo} alt="Central Jordan Logo" className="h-10 w-auto" />
+              <img src={Logo} alt="Shawarma House Logo" className="h-10 w-auto" />
               <div>
                 <h2 className="font-bold text-[var(--color-admin-text)] text-sm">{t('sidebar.cmsPortal')}</h2>
                 <p className="text-xs text-[var(--color-admin-text-muted)]">{t('sidebar.contentManagement')}</p>
